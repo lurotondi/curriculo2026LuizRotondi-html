@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/cadastro">
+        <fieldset>
+
+            <div>
+                <label for="nomeCompleto">Nome completo</label>
+            <input required type="text" name="nomeCompleto" id="nomeCompleto">
+            <!-- Padrão de nomenclatura: nomeCompleto -> camelCase -->
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+            <input required type="email" name="email" id="email">
+
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+            <input required type="password" name="senha" id="senha">
+
+            </div>
+
+            <div>
+                <label for="telefone">Telefone</label>
+                <input required type="tel" maxlength="11" name="telefone" id="telefone" placeholder="(11) 99999-9999">
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+
+            <div>
+                <label for="estadoCivil">Estado civil:</label>
+                <select name="estadoCivil" id="estadoCivil">
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="viuvo">Viúvo</option>
+                    <option value="divorciado">Divorciado</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="dataNascimento"></label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </div>
+
+            <div>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <button type="submit">Enviar mensagem</button>
+            <button type="reset">Limpar formulário</button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
