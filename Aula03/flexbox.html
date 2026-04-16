@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 50px 50px;
+        }
+
+        /* -> class: . +nome da classe*/
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            width: 800px;
+            height:400px
+        }
+
+        #titulo-principal {
+            color: #FFFFFF;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: #969696;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+
+        /* :hover -> Seletor para quando o mouse estiver sobre o elemento */
+        a:hover {
+            color: brown;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box1">
+
+        <h1 id="titulo-principal">FlexBox</h1>
+        <h2 id="titulo-principal">FlexBox2</h2>
+        <h3 id="titulo-principal">FlexBox3</h3>
+        <h4 id="titulo-principal">FlexBox4</h4>
+        <h5 id="titulo-principal">FlexBox5</h5>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    
+</body>
+
+</html>
