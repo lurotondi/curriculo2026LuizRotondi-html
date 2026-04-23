@@ -1,0 +1,102 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaração das variáveis CSS (Custom orperties) */
+
+:root {
+    /* Cores da Landing Page */
+
+    --cor-primaria: #004AC6;
+    --cor-primaria-hover: #003EA8;
+    --cor-fundo: #F8F9FF;
+    --cor-branca: #FFFFFF;
+    --cor-fundo-secundario: #EFF4FF;
+    --cor-texto: #0B1C30;
+    --cor-texto-suave: #434655;
+    --cor-borda: #C3C6D7;
+
+    /* Tipografia */
+    --fonte-principal: 'Inter';
+
+    /* Espaçamentos - Medida: rem -> Melhor acessibilidade: respeita configuração do usuário */
+
+    --espaco-xs: 0.5rem;    /* 8px */
+    --espaco-sm: 1rem;      /* 16px */
+    --espaco-md: 1.5rem;    /* 24px */
+    --espaco-lg: 2rem;      /* 32px */
+    --espaco-xl: 3rem;      /* 48px */
+    --espaco-xxl: 6rem;     /* 96px */
+
+    /* Bordas arredondadas */
+
+    --raio-sm: 0.5rem;
+    --raio-md: 0.75rem;
+    --raio-lg: 1rem;
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.navbar {
+    /*Fixa o elemento na tela*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999; /* Posicionamento dos itens em camada FRENTE - SOBREPOSTO */
+    background-color: var(--cor-fundo);
+    opacity: 0.85;
+    backdrop-filter: blur(12px); /* Efeito de vidro opaco */
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    padding: var(--espaco-sm) var(--espaco-lg);
+}
+
+.navbar-logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    letter-spacing: -0.03rem;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: var(--espaco-lg);
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--cor-texto-suave);
+    font-size: 0.9375rem;
+    font-weight: 550;
+}
+
+/* Comportamento quando o mouse passa por cima */
+.navbar-links a:hover {
+    color: var(--cor-primaria);
+}
+
+.navbar-botoes {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-sm);
+}
